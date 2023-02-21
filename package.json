@@ -18,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/Naresh1435/OIC/issues"
   },
-  "homepage": "https://github.com/Naresh1435/OIC#readme",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
