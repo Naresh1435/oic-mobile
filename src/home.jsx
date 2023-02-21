@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from 'react-dom';
 import logo from "./imgs/olympiclogo-1.png"
 import { Link } from "react-router-dom";
 import "./home.css";
