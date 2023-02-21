@@ -3,8 +3,21 @@
     padding: 0;
     font-size: .85rem;
 }
-
-
+.ash {
+    font-family: 'Akshar', sans-serif;
+}
+.darker {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+.aldrich {
+    font-family: 'Aldrich', sans-serif;
+}
+.do {
+    font-family: 'Do Hyeon', sans-serif;
+}
+.inter {
+    font-family: 'Inter', sans-serif;   
+}
 nav {
     background-color: #0f0f0f;
 }
@@ -68,6 +81,29 @@ nav {
     background-size: cover;
     object-fit: cover;
 
+}
+
+.home-card {
+    background: linear-gradient(145deg,rgb(171, 171, 171,100),rgb(81, 81, 81,100));
+    border-radius: 4rem 0 4rem 0;
+}
+.bg-home-card {
+    background-color: #4E4E4E;
+}
+.home-card-title {
+    background-color: #4E4E4E;
+    border-radius: 4rem 0 4rem 0;
+}
+.parallax-img2 {
+    background: url('./imgs/professional-baseball-players-1.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
 }
 .spec{
     background: url("./imgs/spec-bg.png");
