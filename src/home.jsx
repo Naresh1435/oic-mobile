@@ -15,102 +15,117 @@ import sp7 from './imgs/sp7.png';
 import card3 from './imgs/soft-6.png';
 import card2 from './imgs/soft-3-2.png';
 import card1 from './imgs/soft-3.png';
+import parallax_img from './imgs/pexels-vlad-che-an-2694317-1.png';
+// import cup from './imgs/cup.jpeg'
 function Home() {
     const handleNavDrop = () =>{
         document.getElementById("navdrop").classList.toggle("hidden");
     }
+    window.addEventListener("scroll",(event)=>{
+       
+            document.getElementById("navdrop").classList.add("hidden");
+        
+    });
     return (
         <div className="bg-black-con">
-            <div className="h-screen flex flex-col">
+            <div className=" flex flex-col">
                 <nav className="flex  flex-col">
-                    <div className="flex w-screen p-2">
-                        <div className="w-2/3">
-                            <img src={logo} alt=""/>
+                    <div className="flex w-screen p-2 navcontents">
+                        <div className="w-4/6">
+                            <img src={logo} />
                         </div>
                         <div className="text-white relative flex justify-end pr-2 gap-4 w-1/3 justify-self-end">
-                            <button className="flex inter items-center gap-2"><i className="fa-solid fa-circle-user"></i> Sign Up</button> 
-                            <button className="fa-solid fa-bars" onClick={handleNavDrop}></button>
-                            <div className="flex flex-col ash h-screen hidden text-left text-black absolute -right-3 gap-4 top-10 z-20 bg-green p-2 text-sm " id="navdrop">
+                            <button className="fa-solid fa-bars text-lg" onClick={handleNavDrop}></button>
+                            <div className="flex flex-col ash h-screen absolute hidden text-left text-black  -right-3 gap-4  z-20 bg-green p-4 text-sm navdrop" id="navdrop">
                         
                                 <Link id="home" >Home</Link>
                                 <Link id="home" >The Facility</Link>
                                 <Link id="home" >Memberships</Link>
                                 <Link id="home" >Batting Cages</Link>
                                 <Link id="home" >Programs & Events</Link>
+                                <Link id="home" >FAQ</Link>
+                                <Link id="home" >Pricing</Link>
+                                <Link id="home" >More</Link>
                                 <Link id="home" >Contact Us</Link>
-                                <button className="border-2 border-black rounded-md py-1 -px-2 " onClick={handleNavDrop}>Close</button>
+                                <button className="border-2 border-black rounded-md py-1 -px-2 " onClick={handleNavDrop}>Sign Up</button>
+                                <div className="flex flex-col gap-1">
+                                <span className="text-sm">Email:demo@gmail.com</span>
+                                <span className="text-sm">Phone : +1 234 6988</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
                 </nav>
-                <div className="video-con-1 relative">
-                    <div className="h-full home-video-parent z-10 relative ">
+                <div className=" relative">
+                    <div className=" home-video-parent z-10 relative ">
                         <video className="home-video"   autoPlay loop muted  >
                                 <source src="con1.mp4" type="video/mp4"/>
                         </video>
                     </div>
-                    <div className="z-20 bottom-1/3 flex-col flex gap-2 p-2 absolute">
-                            <div className="text-white font-bold darker text-3xl">OLYMPIC INDOOR SPORTS</div>
-                            <div className="bg-green-1 px-2 darker py-1 text-lg font-bold ">High Perfomance Facility in the USA.</div>
-                            <div className="flex mt-2 inter w-full gap-4">
-                                <button className="bg-green-1 px-8 py-1 text-xl">Register</button>
-                                <button className="bg-yellow px-8 py-1 text-xl">Learn More</button>
+                    <div className="z-20  flex-col flex p-2 absolute vidtext">
+                            <div className="text-white font-bold darker  vidtext1">OLYMPIC INDOOR SPORTS</div>
+                            <div className="bg-green-1  darker font-bold flex items-center px-1  vidtext2">
+                                <span className="vidtext2">High Perfomance Facility in the USA.</span>
+                            </div>
+                            <div className="flex  inter w-full ">
+                                <button className="bg-green-1   vidtext3">Register</button>
+                                <button className="bg-yellow  vidtext3">Learn More</button>
                             </div>
                         </div>
                 </div>        
-                <div className="flex text-center py-2 gap-3 bg-gray">
-                    <div className=" flex w-2/5  items-center gap-2 px-4 py-2 rounded-tr-2xl bg-black text-white ">
-                        <span className="w-full do">WHAT WE DO!</span>
-                        <span className="h-2 bg-green w-8 "></span>
+                <div className="flex text-center tickercon bg-gray ">
+                    <div className=" flex rounded-tr-2xl bg-black pl-1 text-white tickertext">
+                        <span className="w-full do text">WHAT WE DO!</span>
+                        <span className=" bg-green tickerline "></span>
                     </div>
-                    <div className=" flex w-3/5  items-center gap-2  py-2 rounded-tl-2xl bg-black text-white ">
-                    <img src="ticker-1.gif" className="px-2" alt="" srcset="" />
+                    <div className=" flex tickerbox  items-center  rounded-tl-2xl bg-black text-white ">
+                    <img src="ticker-1.gif" className="ticker" alt="" srcset="" />
                     </div>
                 </div> 
             </div>
             <div className="">
-                <div className="h-full py-8 px-4 flex parallax-img2">
-                    <div className="flex m-auto gap-5 p-2 justify-center items-center   flex-col">
-                            <div className=" home-card w-5/6 relative ">
-                                    <div className="bg-home-card text-center overflow-hidden home-card-title py-6">
-                                        <span className="text-2xl font-bold text-white aldrich">BASEBALL</span>
+                <div className=" py-8 px-4 flex parallax-img2 z-20">
+                    <div className="flex m-auto gap-10 p-2 justify-center items-center   flex-col">
+                            <div className=" home-card  relative ">
+                                    <div className="bg-home-card text-center overflow-hidden home-card-title ">
+                                        <span className=" font-bold text-white aldrich">BASEBALL</span>
                                     </div>
                                     <div className="relative items-center flex">
                                         <div className="w-full flex h-full">
-                                            <img src={card1} height="80%" width={"90%"} alt="" />
+                                            <img src={card1} height={"80%"} width={"90%"} alt="" />
                                         </div>
                                         <div className="absolute h-2/3 top-50% w-3 rounded-tl-3xl rounded-br-3xl bg-home-card">
 
                                         </div>
                                     </div>
                                     <hr className="border-2 bg-white box-border"/>
-                                    <div className=" w-full p-6 text-center">
-                                        <span className="text-color-1 text-3xl font-bold inter ">REGISTER</span>
+                                    <div className=" w-full regcon text-center">
+                                        <span className="text-color-1  font-bold inter cardregister">REGISTER</span>
                                     </div>
                             </div>
-                            <div className=" home-card w-5/6 relative ">
-                                    <div className="bg-home-card text-center overflow-hidden home-card-title py-6">
-                                        <span className="text-2xl font-bold text-white alrich">SOFTBALL</span>
+                            <div className=" home-card  relative ">
+                                    <div className="bg-home-card text-center overflow-hidden home-card-title ">
+                                        <span className="font-bold text-white aldrich">SOFTBALL</span>
                                     </div>
-                                    <div className="relative items-center flex">
+                                    <div className="relative items-center flex mt-7">
                                         <div className="w-full flex h-full">
-                                            <img src={card2} height="100%" width={"100%"} alt="" />
+                                            <img src={card2} height={"130%"} width={"130%"} alt="" />
                                         </div>
                                         <div className="absolute h-2/3 top-50% w-3 rounded-tl-3xl rounded-br-3xl bg-home-card">
 
                                         </div>
                                     </div>
                                     <hr className="border-2 bg-white box-border"/>
-                                    <div className=" w-full p-6 text-center">
-                                        <span className="text-color-1 text-3xl font-bold inter">REGISTER</span>
+                                    <div className=" w-full regcon text-center">
+                                        <span className="text-color-1  font-bold inter cardregister">REGISTER</span>
                                     </div>
                             </div>
-                            <div className=" home-card w-5/6 relative ">
-                                    <div className="bg-home-card text-center overflow-hidden home-card-title py-6">
-                                        <span className="text-2xl font-bold text-white aldrich ">CRICKET</span>
+                            <div className=" home-card  relative ">
+                                    <div className="bg-home-card text-center overflow-hidden home-card-title ">
+                                        <span className=" font-bold text-white aldrich ">CRICKET</span>
                                     </div>
-                                    <div className="relative items-center flex">
+                                    <div className="relative items-center flex mt-7">
                                         <div className="w-full flex h-full">
                                             <img src={card3} height="80%" width={"90%"} alt="" />
                                         </div>
@@ -119,32 +134,35 @@ function Home() {
                                         </div>
                                     </div>
                                     <hr className="border-2 bg-white box-border"/>
-                                    <div className=" w-full p-6 text-center">
-                                        <span className="text-color-1 text-3xl font-bold inter ">REGISTER</span>
+                                    <div className=" w-full regcon text-center">
+                                        <span className="text-color-1  font-bold inter cardregister">REGISTER</span>
                                     </div>
                             </div>
                     </div>
                 </div>
             </div>
-            <div className="h-screen">
-                <div className="h-full flex parallax-img">
-                    <div className="flex m-auto text-left text-white gap-3 flex-col">
-                    <div className="flex p-4 items-center ">
-                        <span className="text-5xl w-1/2 darker  ">About Us</span>
-                        <span className="bg-green h-2 w-1/2"> </span>
+            <div className="paracon">
+                <div className="parallax-img">
+                    
+                    
+                    <div className="flex m-auto text-left text-white  flex-col">
+                    <div className="flex w-4/5  items-center ">
+                        <span className="aboutustext  w-1/2 darker  ">About Us</span>
+                        <span className="bg-green h-1 w-2/3"> </span>
                     </div>
-                    <div className="p-4 text-left gap-2 darker flex flex-col">
-                        <span className="text-left">Olympic Indoor Sports is a high-performance facility that provides
+                    <div className="p-3 text-left gap-2 darker  flex flex-col about">
+                        <span className="text-left text-sm">Olympic Indoor Sports is a high-performance facility that provides
 training in Baseball, Softball & Cricket skills.</span>
-                        <span className="text-left">We help student-athletes gain confidence, get better, and..</span>
+                        <span className="text-left text-sm">We help student-athletes gain confidence, get better, and..</span>
                     </div>
-                        <div className="p-4">
-                            <p className="text-7xl inter text-color-1">HAVE FUN!</p>
+                        <div className="p-3">
+                            <p className="havefuntext inter text-color-1">HAVE FUN!</p>
                         </div>
                     </div>
+                    {/* <img src={cup} alt="" /> */}
                 </div>
             </div>
-            <div className="h-screen relative overflow-hidden ">
+            <div className="h-56 relative ">
                 <video  className=" parallax-video" autoPlay loop muted>
                     <source src="Parallax.mp4" type="video/mp4" />
                 </video>
@@ -154,19 +172,19 @@ training in Baseball, Softball & Cricket skills.</span>
             <hr className="w-full h-2 bg-green" />
             <p className="absolute px-4  bg-black text-2xl do  text-white">The Facility</p>
             </div>  
-            <div className="spec h-screen flex flex-col gap-5 ">
+            <div className="spec flex flex-col gap-5 ">
                 <div className="m-auto w-80">
                     <img src={emblem} height="80%" width="100%" alt="" />
                 </div>
                 <div className="m-auto  ">
-                    <div className="inter">
+                    <div className="inter py-10 ">
                         <div className="px-10 text-center font-bold py-4 bg-green-linear rounded-t-lg">
                             <span>SPECIFICATIONS</span>
                         </div>
                         <div className="flex bg-spec-linear rounded-b-lg text-white flex-col ">
                             <div className="flex items-center p-4 gap-4">
                                 <img src={sp1} height={"20px"} width="20px" alt="" />
-                                <p><b>25,000</b> Sq ft</p>
+                                <p><b>20,000</b> Sq ft</p>
                             </div>
                             <div className="flex items-center p-4 gap-4">
                                 <img src={sp2} height={"20px"} width="20px" alt="" />
@@ -214,12 +232,12 @@ Feedback</p>
                     </span>
                 </div>
                 <div class=" h-1/2 flex bg-gray-1 inter flex-col p-2 ">
-                    <div class="flex m-auto flex-col gap-4">
-                        <input type="text" className="bg-black-con p-2  form-border  rounded-lg" placeholder="Fist Name & Last Name"/>
+                    <div class="flex m-auto flex-col text-white gap-4">
+                        <input type="text" className="bg-black-con p-2  form-border  rounded-lg" placeholder="First Name & Last Name"/>
                         <input type="text" className="bg-black-con p-2 form-border rounded-lg" placeholder="Phone Number"/>
                         <input type="text"className="bg-black-con p-2 form-border rounded-lg"  placeholder="Email Address"/>
                         <input type="text" className="bg-black-con p-6 form-border rounded-lg" placeholder="Message or Question" />
-                        <button className="p-2 bg-green mt-4">SUBMIT</button>
+                        <button className="p-2 bg-green mt-4 text-black font-bold">SUBMIT</button>
                     </div>
                     
                 </div>
@@ -228,13 +246,13 @@ Feedback</p>
         
     <hr className="w-full h-2 inter bg-green" />
     <img src="imgs/logoemblem-2-1.png" alt="" id="backimg"/>
-    <div class="lastcomponent">
-        <div class="split1">
-            <div class="discription">
-                Olympic Indoor Sports, a game-changing platform for young athletes in Maryland
-                <br/>
+    <div className="lastcomponent">
+        <div className="split1">
+            <div className="discription">
+                <h2>Olympic Indoor Sports, a game-changing platform for young athletes in Maryland
                 to step up and show off their skills in sports such as baseball, softball, cricket, and lacrosse.
-                <br/><br/>
+                </h2>
+                <br />
                 Our mission is to provide a comprehensive space where these young rising stars can take a swing at their
                 athletic aspirations and score big in the game of life.
                 <br/><br/>
@@ -243,7 +261,8 @@ Feedback</p>
             </div>
             
         </div>
-        <div className="flex w-full ">
+        <hr  className="mt-8"/>
+        <div className="flex mt-8 w-full ">
             <div class="w-3/5 flex gap-4 flex-col ">
                     <p className="text-sm text-color-1">QUICK LINKS</p>
                     <p className="">The Facility</p> 
@@ -260,7 +279,7 @@ Feedback</p>
                     Contact Us
                     </p>
             </div>
-            <div className=" w-2/3 mx-auto justify-self-end flex gap-2 text-end flex-col">
+            <div className=" w-2/3 mx-auto justify-self-end pr-1 flex gap-2 text-end flex-col">
                 <div className="flex flex-col">
                 <span className="text-color-1">Location</span>
                 Olympic Indoor Sports

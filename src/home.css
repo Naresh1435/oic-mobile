@@ -3,6 +3,96 @@
     padding: 0;
     font-size: .85rem;
 }
+
+
+
+.navcontents{
+    font-size: 3.5vw;
+}
+.navuserlogo{
+    font-size: 3.5vw;
+}
+.navdrop{
+    top: 9.9vw;
+}
+.vidtext{
+    top: 11vh;
+}
+.vidtext1{
+    font-size: 4vw;
+}
+.vidtext2{
+    font-size: 3vw;
+    text-align: center;
+    padding-bottom: 1px;
+}
+.vidtext3{
+    background-color: transparent;
+    font-size: 2vw;
+    padding: 0.5vh 3.6vw;
+    margin-top: 1vh;
+    margin-right: 1.5vw;
+    font-weight: 900;
+}
+
+.tickercon{
+    width: 100vw;
+    height: 4vh;
+    justify-content: space-between;
+    padding: .5vh 0;
+}
+.tickercon div{
+    height: 3vh;
+}
+.tickertext{
+    width: 35vw;
+    display: flex;
+    align-items: center;
+}
+.tickerline{
+    width: 18vw;
+    height: .5vh;
+    
+}
+.tickertext .text{
+    width: 40%;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+}
+
+.tickerbox{
+    width: 64%;
+    display: flex;
+    justify-content: end;
+}
+.ticker{
+    height: 2vh;
+    width: 95%;
+    
+}
+
+.aboutustext{
+    font-size: 7vw;
+    padding-left: 3vw;
+}
+.about span{
+    font-size: 4vw;
+}
+.havefuntext{
+    font-size: 5vh;
+}
+
+.footer-t1{
+    font-size: 3vw;
+}
+
+
+
+
+
+
+/* -------------------- */
 .ash {
     font-family: 'Akshar', sans-serif;
 }
@@ -21,9 +111,6 @@
 nav {
     background-color: #0f0f0f;
 }
-.video-con-1 {
-    height: 95%;
-}
 
 .bg-green {
     background: #B8FF5E;
@@ -35,10 +122,11 @@ nav {
     background-color: #252525;
 }
 .bg-green-1 {
-    background-color: #B8FF5D;
+    background: linear-gradient(180deg, rgb(184.00000423192978, 255, 93.00000205636024) 0%, rgb(123.06998491287231, 200.81250607967377, 23.428129255771637) 100%);
+   
 }
 .bg-yellow {
-    background-color: #FDEB71;
+    background :linear-gradient(180deg, rgb(253.0000001192093, 235.0000011920929, 113.00000086426735) 0%, rgb(248.0000004172325, 216.00000232458115, 0) 100%)
 }
 .bg-gray{
     background-color: #585858;
@@ -63,9 +151,9 @@ nav {
 }
 .parallax-video {
     position: absolute;
-    height: 100%;
+    height: 30vh;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
     z-index: 0;
     
     
@@ -73,8 +161,6 @@ nav {
 .parallax-img{
     background: url('./imgs/pexels-vlad-che-an-2694317-1.png');
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,6 +172,9 @@ nav {
 .home-card {
     background: linear-gradient(145deg,rgb(171, 171, 171,100),rgb(81, 81, 81,100));
     border-radius: 4rem 0 4rem 0;
+    width: 60vw;
+    height: 45%;
+    
 }
 .bg-home-card {
     background-color: #4E4E4E;
@@ -93,6 +182,17 @@ nav {
 .home-card-title {
     background-color: #4E4E4E;
     border-radius: 4rem 0 4rem 0;
+    padding: 5% 0;
+    
+}
+.home-card-title span{
+    font-size: 150%;
+}
+.regcon{
+    padding: 1vh .5vh;
+}
+.cardregister{
+    font-size: 5vw;
 }
 .parallax-img2 {
     background: url('./imgs/professional-baseball-players-1.png');
@@ -115,14 +215,13 @@ nav {
 }
 
 .home-video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    height: 30vh;
+    width: 100vw;
+    object-fit: fill;
 }
 .home-video-parent{
     overflow: hidden;
 }
-
 
 .qs .one{
     display: flex;
