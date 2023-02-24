@@ -87,6 +87,10 @@
     font-size: 3vw;
 }
 
+.parallax-vid-2 {
+    height: fit-content;
+}
+
 
 
 
@@ -150,7 +154,6 @@ nav {
     border : 1px #7e7e7e solid;
 }
 .parallax-video {
-    position: absolute;
     height: 30vh;
     width: 100%;
     object-fit: fill;
@@ -158,6 +161,7 @@ nav {
     
     
 }
+
 .parallax-img{
     background: url('./imgs/pexels-vlad-che-an-2694317-1.png');
     background-repeat: no-repeat;
@@ -166,6 +170,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
+    
 
 }
 

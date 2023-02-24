@@ -36,22 +36,21 @@ function Home() {
                         </div>
                         <div className="text-white relative flex justify-end pr-2 gap-4 w-1/3 justify-self-end">
                             <button className="fa-solid fa-bars text-lg" onClick={handleNavDrop}></button>
-                            <div className="flex flex-col ash h-screen absolute hidden text-left text-black  -right-3 gap-4  z-20 bg-green p-4 text-sm navdrop" id="navdrop">
-                        
-                                <Link id="home" >Home</Link>
-                                <Link id="home" >The Facility</Link>
-                                <Link id="home" >Memberships</Link>
-                                <Link id="home" >Batting Cages</Link>
-                                <Link id="home" >Programs & Events</Link>
-                                <Link id="home" >FAQ</Link>
-                                <Link id="home" >Pricing</Link>
-                                <Link id="home" >More</Link>
-                                <Link id="home" >Contact Us</Link>
-                                <button className="border-2 border-black rounded-md py-1 -px-2 " onClick={handleNavDrop}>Sign Up</button>
-                                <div className="flex flex-col gap-1">
-                                <span className="text-sm">Email:demo@gmail.com</span>
-                                <span className="text-sm">Phone : +1 234 6988</span>
+                            <div className=" ash h-screen absolute hidden text-left text-black z-20  -right-3  bg-green p-4 text-sm navdrop" id="navdrop">
+                                <div className="flex flex-col overflow-x-hidden gap-4 relative  " >
+                                    <Link id="home" >Home</Link>
+                                    <Link id="home" >The Facility</Link>
+                                    <Link id="home" >Memberships</Link>
+                                    <Link id="home" >Batting Cages</Link>
+                                    <Link id="home" >Programs & Events</Link>
+                                    <Link id="home" >FAQ</Link>
+                                    <Link id="home" >Pricing</Link>
+                                    <Link id="home" >More</Link>
+                                    <Link id="home" >Contact Us</Link>
+                                    <button className="border-2 border-black rounded-md py-1 -px-2 " onClick={handleNavDrop}>Sign Up</button>
+                                    
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -142,11 +141,11 @@ function Home() {
                 </div>
             </div>
             <div className="paracon">
-                <div className="parallax-img">
+                <div className="parallax-img ">
                     
                     
-                    <div className="flex m-auto text-left text-white  flex-col">
-                    <div className="flex w-4/5  items-center ">
+                    <div className="flex  m-auto text-left text-white  flex-col">
+                    <div className="flex w-5/6  items-center ">
                         <span className="aboutustext  w-1/2 darker  ">About Us</span>
                         <span className="bg-green h-1 w-2/3"> </span>
                     </div>
@@ -162,13 +161,13 @@ training in Baseball, Softball & Cricket skills.</span>
                     {/* <img src={cup} alt="" /> */}
                 </div>
             </div>
-            <div className="h-56 relative ">
-                <video  className=" parallax-video" autoPlay loop muted>
+            <div className="parallax-vid-2">
+                <video  className=" parallax-video h-full" autoPlay loop muted>
                     <source src="Parallax.mp4" type="video/mp4" />
                 </video>
             </div>
             {/* SPECIFICATIONS */}
-            <div className="w-screen relative shadow-md shadow-black flex flex-col justify-center text-center items-center bg-black py-3">
+            <div className=" relative shadow-md shadow-black flex flex-col justify-center text-center items-center bg-black py-3">
             <hr className="w-full h-2 bg-green" />
             <p className="absolute px-4  bg-black text-2xl do  text-white">The Facility</p>
             </div>  
